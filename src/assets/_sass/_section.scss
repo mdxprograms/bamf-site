@@ -1,0 +1,14 @@
+.section {
+  margin-bottom: 8rem;
+  padding: 5rem 0;
+  text-align: center;
+
+  h2 {
+    border-bottom: 4px solid $red;
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  }
+}

@@ -1,0 +1,9 @@
+<nav>
+  <ul class="items">
+    {% for item in site.data.nav %}
+      <li>
+        <a class="button button-white" href="{{item.url | remove_last: '/'}}">{{item.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

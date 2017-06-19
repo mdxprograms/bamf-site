@@ -1,0 +1,23 @@
+@import "susy";
+@import "variables";
+
+body {
+  @include container;
+  background: #fff;
+  font-family: 'Eczar', serif;
+  font-size: 1em;
+  line-height: 1.45;
+  margin: 0 auto;
+}
+
+@import
+  "mixins",
+  "buttons",
+  "typography",
+  "img-content-card",
+  "carousel",
+  "nav",
+  "section",
+  "about",
+  "footer"
+;

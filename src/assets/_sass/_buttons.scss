@@ -1,0 +1,27 @@
+.button {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  font-size: 20px;
+  height: 40px;
+  text-decoration: none;
+  width: 192px;
+}
+
+.button-white {
+  background: #fff;
+  color: $black;
+
+  &:hover {
+    background: $red;
+    color: #fff;
+  }
+}
+
+.button-red {
+  background: $red;
+  color: #fff;
+
+  &:hover {
+    background: $red;
+    color: #fff;
+  }
+}

@@ -1,0 +1,34 @@
+# general settings
+title: BAMF
+subtitle: General Contracting
+email: bamfgeneralcontracting@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  BAMF General Contracting
+baseurl: ""
+url: ""
+twitter:
+  username: ""
+facebook:
+  username: ""
+
+# directory settings
+source: src
+destination: build
+incremental: true
+
+# style settings
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-maps # https://github.com/ayastreb/jekyll-maps
+  - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-sitemap # https://github.com/jekyll/jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - node_modules
