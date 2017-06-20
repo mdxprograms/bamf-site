@@ -1,6 +1,5 @@
 .img-content-card {
   display: flex;
-  flex-direction: column-reverse;
   justify-content: center;
   margin-top: 2rem;
 
@@ -38,17 +37,15 @@
 
   &__content {
     background: #eee;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-    font-size: 17.92px;
+    font-size: 19.92px;
     font-weight: 500;
     line-height: 29px;
-    margin-top: 3rem;
     padding: 3rem 2rem;
     text-align: left;
+    width: 100%;
 
     @media(min-width: $tablet) {
-      margin-top: 8rem;
-      padding: 3rem 2rem 3rem 50%;
+      padding: 2rem 10rem;
     }
   }
 }

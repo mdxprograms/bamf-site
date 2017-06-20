@@ -21,6 +21,10 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
+# collections
+collections:
+  - services
+
 # Build settings
 markdown: kramdown
 gems:
