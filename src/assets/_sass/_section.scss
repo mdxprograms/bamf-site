@@ -1,6 +1,26 @@
 .section {
-  margin: 6rem auto;
+  @include container;
+  box-shadow: 0 10px 8px #ddd;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
   text-align: center;
+  left: -200vh;
+  width: 0;
+  transition: all .3s ease-in-out;
+
+  &.active {
+    background: #fff;
+    border-top: 2px solid $black;
+    display: block;
+    padding: 4rem;
+    position: relative;
+    margin: 0 auto;
+    opacity: 1;
+    left: auto;
+    width: auto;
+  }
 
   h2 {
     border-bottom: 4px solid $red;
@@ -14,4 +34,9 @@
   img {
     min-height: 100%;
   }
+}
+
+@-prefix-keyframes slide {
+  from {height: 0;}
+  to {height: 300px;}
 }

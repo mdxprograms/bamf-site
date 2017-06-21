@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "hawkins"
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-maps"
+  gem "jekyll-minifier"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
 end

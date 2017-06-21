@@ -2,8 +2,7 @@
 @import "variables";
 
 body {
-  @include container;
-  background: #fff;
+  background-color: #fff;
   font-family: 'Eczar', serif;
   font-size: 1em;
   line-height: 1.45;
@@ -17,6 +16,7 @@ body {
   "img-content-card",
   "carousel",
   "nav",
+  "logo",
   "section",
   "about",
   "gallery",

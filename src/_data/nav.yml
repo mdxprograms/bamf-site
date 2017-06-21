@@ -1,8 +1,12 @@
 - title: Services
+  id: services-link
   url: /#services
 - title: Reviews
+  id: reviews-link
   url: /#reviews
 - title: About
+  id: about-link
   url: /#about
 - title: Contact
+  id: contact-link
   url: /#contact

@@ -14,7 +14,6 @@ facebook:
 # directory settings
 source: src
 destination: build
-incremental: true
 
 # style settings
 sass:
@@ -29,6 +28,7 @@ collections:
 markdown: kramdown
 gems:
   - jekyll-maps # https://github.com/ayastreb/jekyll-maps
+  - jekyll-minifier
   - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
   - jekyll-sitemap # https://github.com/jekyll/jekyll-sitemap
 exclude:
