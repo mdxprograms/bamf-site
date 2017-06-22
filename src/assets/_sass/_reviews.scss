@@ -1,0 +1,27 @@
+.reviews {
+  &__collection {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 2rem auto;
+    width: 90%;
+
+    @media(min-width: $tablet) {
+      width: 60%;
+    }
+  }
+
+  &__collection p {
+    background-color: #eee;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+
+  &__collection-person {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

@@ -1,28 +1,66 @@
 nav {
   @include container;
-  margin: 4rem auto 0;
-  .items {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
+  margin: 8rem auto 0;
 
-    li {
-      width: 23%;
+  @media(min-width: $mobile) {
+    margin: 12rem auto 0;
+  }
+
+  .items {
+    @include container;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    height: 0;
+    justify-content: space-between;
+    opacity: 0;
+    width: 0;
+
+    &.active {
+      flex-direction: row;
+      height: auto;
+      justify-content: space-around;
+      margin: 0 auto;
+      opacity: 1;
+      width: auto;
     }
 
-    li:nth-child(5) {
+    @media(min-width: $mobile) {
+      flex-direction: row;
+      height: auto;
+      justify-content: center;
+      margin: 0 auto;
+      opacity: 1;
+      width: 100%;
+    }
+
+    li {
       margin-right: 1rem;
+      width: 50%;
+
+      @media(min-width: $mobile) {
+        width: 20%;
+      }
+    }
+
+    li:nth-child(4) {
+      @media(min-width: $mobile) {
+        margin-right: 1rem;
+      }
     }
 
     a {
       display: block;
       font-weight: 600;
       height: 100%;
-      padding: 1rem 0;
+      padding: .5rem;
       text-align: center;
       width: 100%;
+      transition: all .05s ease-in-out;
+
+      @media(min-width: $tablet) {
+        padding: 1rem 0;
+      }
     }
   }
 }

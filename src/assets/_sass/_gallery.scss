@@ -1,11 +1,12 @@
 .gallery-grid {
-  align-items: flex-start;
-  // background-color: #eee;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 4rem;
-  width: 100%;
+  @media(min-width: $mobile) {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
 
   h4 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -16,8 +17,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
-    padding: 4rem 0 0;
-    width: 50%;
+    padding: 1.5rem 0 0;
+    width: 100%;
+
+    @media(min-width: $mobile) {
+      width: 50%;
+    }
   }
 
   &__item img {
