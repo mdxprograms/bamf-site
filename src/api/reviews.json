@@ -1,8 +1,3 @@
 ---
 ---
-
-[
-{% for item in site.data.nav %}
-  {{item | jsonify}}{% if forloop.last %}{% else %},{% endif %}
-{% endfor %}
-]
+{% include endpoint.html data=site.data.reviews %}

@@ -1,0 +1,5 @@
+[
+{% for item in include.data %}
+  {{item | jsonify}}{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+]

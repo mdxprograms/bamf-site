@@ -10,7 +10,7 @@
   <script>
     this.navItems = []
 
-    axios.get('/api/reviews.json')
+    axios.get('/api/nav.json')
       .then(res => {
         this.navItems = res.data
         this.update()
