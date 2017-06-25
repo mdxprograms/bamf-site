@@ -12,7 +12,7 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script>html5.addElements('todo')</script>
+    <script>html5.addElements('*')</script>
     <![endif]-->
   </head>
   <body>
@@ -22,19 +22,19 @@
         <nav-bar></nav-bar>
         <router>
           <route path="/">
-            {% include services.html %}
+            <services></services>
           </route>
           <route path="services">
-            {% include services.html %}
+            <services></services>
           </route>
           <route path="reviews">
             <reviews></reviews>
           </route>
           <route path="about">
-            {% include about.html %}
+            <about></about>
           </route>
           <route path="contact">
-            {% include contact.html %}
+            <contact></contact>
           </route>
         </router>
         <footer-bar></footer-bar>

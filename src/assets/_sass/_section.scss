@@ -1,15 +1,19 @@
 .section {
   @include container;
   background: #fff;
-  border-top: 2px solid $black;
   display: block;
   padding: 2.5rem 0;
   position: relative;
   margin: 0 auto;
+  min-height: 40vh;
   opacity: 1;
   left: auto;
   text-align: center;
   width: auto;
+
+  @media(min-width: $mobile) {
+    border-top: 2px solid $black;
+  }
 
   h2 {
     border-bottom: 4px solid $red;
