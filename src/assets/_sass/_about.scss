@@ -1,2 +1,15 @@
 #about {
+  .img-content-card__content {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+
+    @media(min-width: $tablet) {
+      width: 60%;
+    }
+  }
 }

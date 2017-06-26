@@ -1,0 +1,51 @@
+.form {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  width: 88vw;
+
+  @media(min-width: $mobile) {
+    box-shadow: 0 4px 4px rgba($black, 0.5);
+    padding: 2rem;
+    width: 50%;
+  }
+
+  input, textarea {
+    border: none;
+    color: $black;
+    font-size: 1.2rem;
+    margin: .5rem;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+
+    &:focus {
+      box-shadow: 0 2px 2px #444;
+    }
+  }
+
+  textarea {
+    height: 6rem;
+
+    @media(min-width: $mobile) {
+      height: 10rem;
+    }
+  }
+
+  button {
+    background: #000;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    height: 3rem;
+    margin: 1rem 0;
+    padding: 0rem;
+    width: 50%;
+  }
+}

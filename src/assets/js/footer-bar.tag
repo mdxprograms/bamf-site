@@ -1,7 +1,11 @@
 <footer-bar>
   <footer>
     <ul>
-      <li>Footer here</li>
+      <li>{currentDate}</li>
     </ul>
   </footer>
+
+  <script>
+    this.currentDate = new Date('now')
+  </script>
 </footer-bar>
