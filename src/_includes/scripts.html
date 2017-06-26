@@ -11,6 +11,8 @@
 <script src="https://cdn.jsdelivr.net/riot-route/3.1.1/route+tag.min.js"></script>
 
 <script>
-  riot.mount('app')
-  route.start(true)
+  riot.compile(function() {
+    riot.mount('app')
+    route.start(true)
+  })
 </script>
