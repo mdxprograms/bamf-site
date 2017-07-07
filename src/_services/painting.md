@@ -1,5 +1,6 @@
 ---
 title: Interior and Exterior Painting
+service: painting
 ---
 #### Painting
 

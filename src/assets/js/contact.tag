@@ -7,6 +7,7 @@
       <input type="hidden" name="_next" value="https://bamfgc.com/#contact">
       <input placeholder="Name" type="text" name="name" required>
       <input placeholder="Email" type="email" name="_replyto" required>
+      <input placeholder="Phone" type="tel" name="phone" />
       <textarea placeholder="Project Details" name="details" required></textarea>
       <button class="button button-white" type="submit">Send</button>
     </form>

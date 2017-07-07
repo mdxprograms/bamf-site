@@ -3,7 +3,7 @@
     <h2>Reviews</h2>
     <div class="reviews__collection">
       <p each={item in reviews}>
-        <raw html="{item.text}"></raw>
+        <raw class="reviews__collection-text" html="{item.text}"></raw>
       </p>
     </div>
   </section>

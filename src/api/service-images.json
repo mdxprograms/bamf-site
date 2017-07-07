@@ -1,0 +1,29 @@
+---
+---
+{
+  "flooring": [
+    {% directory path: assets/images/services/flooring exclude: default.jpg %}
+      {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% enddirectory %}
+  ],
+  "carpentry": [
+    {% directory path: assets/images/services/carpentry exclude: default.jpg %}
+      {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% enddirectory %}
+  ],
+  "tiling": [
+    {% directory path: assets/images/services/tiling exclude: default.jpeg %}
+      {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% enddirectory %}
+  ],
+  "windowsanddoors": [
+    {% directory path: assets/images/services/windows-doors exclude: default.jpeg %}
+      {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% enddirectory %}
+  ],
+  "painting": [
+    {% directory path: assets/images/services/painting exclude: default.jpg %}
+      {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% enddirectory %}
+  ]
+}

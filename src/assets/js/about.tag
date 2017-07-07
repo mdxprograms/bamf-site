@@ -3,9 +3,9 @@
     <h2>About</h2>
     <div class="img-content-card">
       <div class="img-content-card__content">
-        <h4>Why Choose BAMF</h4>
-        <p each={aboutContent}>
-          {why}
+        <h4>Why Choose <span>BAMF</span></h4>
+        <p if={typeof aboutContent !== 'undefined'}>
+          {aboutContent.why}
         </p>
       </div>
     </div>
@@ -16,10 +16,8 @@
 
     axios.get('/api/about.json')
       .then(res => {
-        res.data.map(d => this.aboutContent.push(d))
-        this.update()
-      })
-      .catch(err => console.error(err))
+        this.aboutContent = res.data[1]
+      }).then(() => this.update())
 
     riot.tag('raw', '', function(opts) {
       this.root.innerHTML = opts.html

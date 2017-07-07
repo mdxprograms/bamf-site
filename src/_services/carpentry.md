@@ -1,5 +1,6 @@
 ---
 title: Carpentry
+service: carpentry
 ---
 #### Carpentry
 

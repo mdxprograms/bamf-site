@@ -1,6 +1,6 @@
 ---
 title: Flooring
-category: flooring
+service: flooring
 ---
 #### Flooring
 
