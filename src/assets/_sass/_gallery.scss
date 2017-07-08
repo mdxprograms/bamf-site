@@ -1,48 +1,78 @@
+.expand-image {
+    background: rgba(0, 0, 0, .8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+
+    .expanded-image {
+        margin-top: 8rem;
+        max-height: 70%;
+        max-width: 90%;
+
+        @media(min-width: $mobile) {
+          height: 80vh;
+          max-width: 80%;
+        }
+    }
+
+    .collapse-image {
+        cursor: pointer;
+        position: fixed;
+        background: #000;
+        height: 3rem;
+        color: #fff;
+        box-shadow: none;
+        font-size: 2em;
+        border: none;
+        top: 2rem;
+        width: 3rem;
+        right: 2rem; 
+    }
+}
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 2rem;
+  justify-content: center;
   width: 100%;
 
-  @media(min-width: $tablet) {
-    justify-content: space-between;
+  p {
+    align-self: center;
+    padding: 1rem 0;
+    width: 100%;
+
+    @media(min-width: $mobile) {
+      padding: 0 0 1rem;
+    }
   }
 
   &__item {
-    background-color: rgba(0,0,0,0.02);
-    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
-    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 1.5rem auto;
-    padding: 1rem 0;
-    width: 90%;
+    height: 10rem;
+    width: 50%;
 
+    @media(min-width: $mobile) {
+      height: 10rem;
+      width: 30%;
+    }
+    
     @media(min-width: $tablet) {
-      margin: 1rem 0;
-      width: 45%;
+      opacity: .5;
+      width: 22%;
 
-      &:last-child {
-        margin: 1rem auto;
+      &:hover {
+        cursor: pointer;
+        opacity: .9;
       }
     }
-
-    &:hover {
-      background-color: rgba(0,0,0,0.08);
-    }
   }
 
-  &__item p {
-    align-self: flex-end;
-  }
-
-  &__item img {
+  img {
+    min-height: 100%;
+    margin: 0;
     width: 100%;
-
-    @media(min-width: $tablet) {
-      height: 19rem;
-    }
   }
 }

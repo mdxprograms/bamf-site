@@ -3,7 +3,7 @@
     <h2>About</h2>
     <div class="img-content-card">
       <div class="img-content-card__content">
-        <h4>Why Choose <span>BAMF</span></h4>
+        <h4>Choose <span>BAMF</span></h4>
         <p if={typeof aboutContent !== 'undefined'}>
           {aboutContent.why}
         </p>

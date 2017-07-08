@@ -62,7 +62,7 @@
         this.navItems = res.data
 
         if (location.hash === '') {
-          this.active = '/#services'
+          this.active = '/#gallery'
         } else {
           this.active = this.navItems.find(i => i.url === `/${location.hash}`).url
         }

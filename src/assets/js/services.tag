@@ -1,45 +1,46 @@
 <services>
   <section class="section" id="services">
-    <h2>Services</h2>
-    <div class="gallery-grid">
-      <div each={services} class="gallery-grid__item">
-        <raw html="{content}"></raw>
-      </div>
+    <h2>Gallery</h2>
+    <div onclick={collapseImage} if={expandImageSet} class="expand-image">
+      <button onclick={collapseImage} class="button button-white collapse-image">&times;</button>
+      <img class="expanded-image" alt="" src="{expandedImage}"/>
     </div>
-    <div if={showService} class="carousel">
-      <div each="{image in images}" class="carousel-item">
-        <img src="{image}" alt=""/>
+    <div if={showService} class="gallery-grid">
+      <p>Click on an image to expand</p>
+      <div onclick={() => expandImage(image)} if={(!image.includes('default.jpg') && !image.includes('default.jpeg'))} each="{image in images}" class="gallery-grid__item">
+        <img src="{image}" alt="gallery-image" />
       </div>
     </div>
   </section>
 
   <script>
-    this.services = []
-    this.images = []
-    this.showService = false
+   let images = []
+   this.showService = false
+   this.expandImageSet = false
+   this.expandImage = ''
 
-    initCarousel(service) {
-      this.images = []
-      axios.get('/api/service-images.json')
+   expandImage(path) {
+     this.expandedImage = ''
+     this.update({
+       expandImageSet: true,
+       expandedImage: path
+     })
+   }
+
+   collapseImage() {
+     this.update({
+       expandImageSet: false,
+       expandedImage: ''
+     })
+   }
+
+   axios.get('/api/service-images.json')
         .then(res => {
-          if (res.data[service] && res.data[service].length) {
-            this.images = res.data[service]
-            this.showService = true
-            this.update()
-          }
+          this.update({
+            images: res.data,
+            showService: true
+          })
         })
         .catch(err => console.error(err))
-    }
-
-    axios.get('/api/services.json')
-      .then(res => {
-        this.services = res.data
-        this.update()
-      })
-      .catch(err => console.error(err))
-
-    riot.tag('raw', '', function (opts) {
-      this.root.innerHTML = opts.html
-    })
   </script>
 </services>
