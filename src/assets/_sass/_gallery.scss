@@ -13,19 +13,19 @@
         max-width: 90%;
 
         @media(min-width: $mobile) {
-          height: 80vh;
-          max-width: 80%;
+            height: 80vh;
+            max-width: 80%;
         }
     }
 
     .collapse-image {
         cursor: pointer;
         position: fixed;
-        background: #000;
+        background: transparent;
         height: 3rem;
         color: #fff;
         box-shadow: none;
-        font-size: 2em;
+        font-size: 4em;
         border: none;
         top: 2rem;
         width: 3rem;
@@ -33,46 +33,46 @@
     }
 }
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-
-  p {
-    align-self: center;
-    padding: 1rem 0;
-    width: 100%;
-
-    @media(min-width: $mobile) {
-      padding: 0 0 1rem;
-    }
-  }
-
-  &__item {
     display: flex;
-    flex-direction: column;
-    height: 10rem;
-    width: 50%;
-
-    @media(min-width: $mobile) {
-      height: 10rem;
-      width: 30%;
-    }
-    
-    @media(min-width: $tablet) {
-      opacity: .5;
-      width: 22%;
-
-      &:hover {
-        cursor: pointer;
-        opacity: .9;
-      }
-    }
-  }
-
-  img {
-    min-height: 100%;
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-  }
+
+    p {
+        align-self: center;
+        padding: 1rem 0;
+        width: 100%;
+
+        @media(min-width: $mobile) {
+            padding: 0 0 1rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        width: 50%;
+
+        @media(min-width: $mobile) {
+            height: 10rem;
+            width: 30%;
+        }
+        
+        @media(min-width: $tablet) {
+            opacity: .8;
+            width: 22%;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+
+    img {
+        min-height: 100%;
+        margin: 0;
+        width: 100%;
+    }
 }
