@@ -1,0 +1,12 @@
+---
+---
+[
+  {
+    "address": "{{site.contact_info.address}}",
+    "description": "{{site.description}}",
+    "phone": "{{site.contact_info.phone}}",
+    "social": "{{site.facebook.username}}",
+    "title": "{{site.title}}",
+    "url": "{{site.url}}"
+  }
+]

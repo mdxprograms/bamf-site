@@ -1,3 +1,6 @@
+- title: Services
+  id: services-link
+  url: /#services
 - title: Gallery
   id: gallery-link
   url: /#gallery

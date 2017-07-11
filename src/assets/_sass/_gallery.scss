@@ -1,4 +1,11 @@
 .gallery {
+  max-width: 100%;
+  padding-top: 2.5rem;
+
+  @media(min-width: $mobile) {
+    padding-top: 0;
+  }
+
   .prev-button, .next-button {
     position: fixed;
     top: 50%;
@@ -30,7 +37,7 @@
     top: 0;
     z-index: 999999;
     .expanded-image {
-      margin-top: 8rem;
+      margin-top: 10rem;
       max-height: 70%;
       max-width: 90%;
       @media(min-width: $mobile) {
@@ -53,33 +60,34 @@
     }
   }
   .gallery-grid {
+    background-color: rgba(0, 0, 0, .7);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1rem;
+    padding: .5rem 0;
     width: 100%;
+
+    @media(min-width: $mobile) {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
     p {
       align-self: center;
-      padding: 1rem 0;
+      color: #fff;
+      padding: 1rem;
       width: 100%;
+
       @media(min-width: $mobile) {
-        padding: 0 0 1rem;
+        padding: 1rem 0;
       }
     }
+
     &__item {
+      cursor: pointer;
       display: flex;
       flex-direction: column;
-      height: 10rem;
-      width: 33.3%;
-      @media(min-width: $mobile) {
-        height: 10rem;
-        width: 28%;
-      }
-      @media(min-width: $tablet) {
-        width: 16%;
-        &:hover {
-          cursor: pointer;
-        }
-      }
+      margin: .5rem;
     }
     img {
       min-height: 100%;

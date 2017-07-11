@@ -1,0 +1,15 @@
+# Offense count: 1
+Metrics/AbcSize:
+  Max: 32
+
+# Offense count: 2
+# Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
+# URISchemes: http, https
+Metrics/LineLength:
+  Max: 80
+
+# Offense count: 1
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  CountComments: false
+  Max: 60

@@ -5,11 +5,14 @@ email: bamfgeneralcontracting@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   BAMF General Contracting
 baseurl: ""
-url: ""
+url: "https://bamfgc.com"
 twitter:
   username: ""
 facebook:
-  username: ""
+  username: "BAMFGeneralContracting"
+contact_info:
+  address: 1278 Normandie Court, Avon IN 46123
+  phone: 317.281.2559
 
 # directory settings
 source: src
@@ -39,3 +42,4 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - node_modules
+  - .rubocop_todo.yml
