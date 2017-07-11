@@ -27,6 +27,7 @@ collections:
 # Build settings
 markdown: kramdown
 gems:
+  - jekyll-autoprefixer
   - jekyll-maps # https://github.com/ayastreb/jekyll-maps
   - jekyll-minifier
   - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
