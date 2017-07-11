@@ -1,4 +1,27 @@
-.expand-image {
+.gallery {
+  .prev-button, .next-button {
+    position: fixed;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    opacity: .5;
+    outline: none;
+    transform: translateY(-50%);
+    z-index: 999999999;
+  }
+  .prev-button {
+    left: 1rem;
+  }
+  .next-button {
+    right: 1rem;
+  }
+  .expand-image {
     background: rgba(0, 0, 0, .8);
     bottom: 0;
     left: 0;
@@ -6,73 +29,62 @@
     right: 0;
     top: 0;
     z-index: 999999;
-
     .expanded-image {
-        margin-top: 8rem;
-        max-height: 70%;
-        max-width: 90%;
-
-        @media(min-width: $mobile) {
-            height: 80vh;
-            max-width: 80%;
-        }
+      margin-top: 8rem;
+      max-height: 70%;
+      max-width: 90%;
+      @media(min-width: $mobile) {
+        height: 80vh;
+        max-width: 80%;
+      }
     }
-
     .collapse-image {
-        cursor: pointer;
-        position: fixed;
-        background: transparent;
-        height: 3rem;
-        color: #fff;
-        box-shadow: none;
-        font-size: 4em;
-        border: none;
-        top: 2rem;
-        width: 3rem;
-        right: 2rem; 
+      cursor: pointer;
+      position: fixed;
+      background: transparent;
+      height: 3rem;
+      color: #fff;
+      box-shadow: none;
+      font-size: 4em;
+      border: none;
+      top: 2rem;
+      width: 3rem;
+      right: 2rem;
     }
-}
-.gallery-grid {
+  }
+  .gallery-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
     p {
-        align-self: center;
-        padding: 1rem 0;
-        width: 100%;
-
-        @media(min-width: $mobile) {
-            padding: 0 0 1rem;
-        }
+      align-self: center;
+      padding: 1rem 0;
+      width: 100%;
+      @media(min-width: $mobile) {
+        padding: 0 0 1rem;
+      }
     }
-
     &__item {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      height: 10rem;
+      width: 33.3%;
+      @media(min-width: $mobile) {
         height: 10rem;
-        width: 50%;
-
-        @media(min-width: $mobile) {
-            height: 10rem;
-            width: 30%;
+        width: 28%;
+      }
+      @media(min-width: $tablet) {
+        width: 16%;
+        &:hover {
+          cursor: pointer;
         }
-        
-        @media(min-width: $tablet) {
-            opacity: .8;
-            width: 22%;
-
-            &:hover {
-                cursor: pointer;
-                opacity: 1;
-            }
-        }
+      }
     }
-
     img {
-        min-height: 100%;
-        margin: 0;
-        width: 100%;
+      min-height: 100%;
+      margin: 0;
+      width: 100%;
     }
+  }
 }

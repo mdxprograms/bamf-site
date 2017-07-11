@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 ruby "2.4.0"
 
-gem "jekyll", "3.4.4"
+gem "jekyll"
 gem "rake"
 gem "susy"
+gem "mini_magick"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

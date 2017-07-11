@@ -24,6 +24,8 @@ sass:
 collections:
   - services
 
+width: 500
+
 # Build settings
 markdown: kramdown
 gems:

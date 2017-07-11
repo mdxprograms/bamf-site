@@ -1,19 +1,7 @@
 ---
 ---
 [
-    {% directory path: assets/images/services/flooring %}
-        {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-    {% enddirectory %},
-    {% directory path: assets/images/services/tiling %}
-        {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-    {% enddirectory %},
-    {% directory path: assets/images/services/carpentry %}
-        {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-    {% enddirectory %},
-    {% directory path: assets/images/services/windows-doors %}
-        {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-    {% enddirectory %},
-    {% directory path: assets/images/services/painting %}
+    {% directory path: assets/images/services exclude: ^((?!_thumb).)*$ %}
         {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
     {% enddirectory %}
-]    
+]
