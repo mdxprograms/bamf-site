@@ -36,13 +36,28 @@
     right: 0;
     top: 0;
     z-index: 999999;
+
     .expanded-image {
-      margin-top: 10rem;
+      margin-top: 35%;
       max-height: 70%;
       max-width: 90%;
+
       @media(min-width: $mobile) {
         height: 80vh;
+        margin-top: 13%;
         max-width: 80%;
+      }
+
+      @media(min-width: $tablet) {
+        margin-top: 20%;
+      }
+
+      @media(min-width: $desktop) {
+        margin-top: 16%;
+      }
+
+      @media(min-width: $desktop-large) {
+        margin-top: 13%;
       }
     }
     .collapse-image {
@@ -70,6 +85,7 @@
 
     @media(min-width: $mobile) {
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+      margin-top: 0;
     }
 
     p {
