@@ -3,11 +3,19 @@
 
 body {
   background-color: #fff;
-  font-family: 'Eczar', serif;
+  font-family: sans-serif;
   font-size: 1em;
   line-height: 1.45;
   margin: 0 auto;
   transition: all 1s cubic-bezier(0.44, 0.85, 0.1, 1.29);
+}
+
+.lightbg {
+  background-color: $lightbg;
+}
+
+.has-radius {
+  border-radius: $radius;
 }
 
 @import
@@ -23,5 +31,6 @@ body {
   "gallery",
   "reviews",
   "footer",
-  "form"
+  "form",
+  "services"
 ;

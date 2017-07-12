@@ -2,7 +2,7 @@
   <section class="section reviews" id="reviews">
     <h2>Reviews</h2>
     <div class="reviews__collection">
-      <p each={item in reviews}>
+      <p class="lightbg has-radius" each={item in reviews}>
         <raw class="reviews__collection-text" html="{item.text}"></raw>
       </p>
     </div>

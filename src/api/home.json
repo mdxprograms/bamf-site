@@ -1,0 +1,7 @@
+---
+---
+[
+  {% directory path: assets/images/home %}
+    {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
+  {% enddirectory %}
+]

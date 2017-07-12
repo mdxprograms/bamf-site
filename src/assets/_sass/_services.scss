@@ -1,0 +1,19 @@
+.services {
+  &__offered {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+
+    @media(min-width: $mobile) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__offered-service .service-background {
+    background-color: #000;
+    height: 256px;
+    width: 256px;
+  }
+}

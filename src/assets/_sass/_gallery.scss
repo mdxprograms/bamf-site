@@ -1,11 +1,4 @@
 .gallery {
-  max-width: 100%;
-  padding-top: 2.5rem;
-
-  @media(min-width: $mobile) {
-    padding-top: 0;
-  }
-
   .prev-button, .next-button {
     position: fixed;
     top: 50%;
@@ -75,35 +68,23 @@
     }
   }
   .gallery-grid {
-    background-color: rgba(0, 0, 0, .7);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-    padding: .5rem 0;
-    width: 100%;
-
-    @media(min-width: $mobile) {
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-      margin-top: 0;
-    }
+    justify-content: space-around;
+    padding: 1rem 0;
 
     p {
       align-self: center;
-      color: #fff;
-      padding: 1rem;
+      color: $black;
+      padding-bottom: 1rem;
       width: 100%;
-
-      @media(min-width: $mobile) {
-        padding: 1rem 0;
-      }
     }
 
     &__item {
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      margin: .5rem;
+      margin: 0 .5rem 1.5rem;
     }
     img {
       min-height: 100%;

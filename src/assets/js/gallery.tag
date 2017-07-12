@@ -8,9 +8,9 @@
       <img if={!loading} class="expanded-image" alt="" src="{expandedImage}" />
     </div>
     <button if={expandImageSet} onclick={nextImage} class="next-button button button-white">&rarr;</button>
-    <div if={showService} class="gallery-grid">
+    <div if={showService} class="gallery-grid lightbg has-radius">
       <p>* Click on an image to expand</p>
-      <div onclick={()=> expandImage(i, v)} each="{v, i in images}" class="gallery-grid__item">
+      <div onclick={() => expandImage(i, v)} each="{v, i in images}" class="gallery-grid__item">
         <img src="{v}" alt="gallery-image" />
       </div>
     </div>
@@ -43,7 +43,7 @@
       const expandedImage = this.images[this.index - 1] || this.images.pop(this.images[this.index - 1])
       this.loading = true;
       this.update({
-        expandedImage: this.images[this.index - 1].replace('_thumb', ''),
+        expandedImage: expandedImage.replace('_thumb', ''),
         index: this.index - 1 || this.images.length,
         loading: false
       })

@@ -11,7 +11,7 @@ nav {
     color: #fff;
     cursor: pointer;
     width: 8vw;
-    padding: .2rem .4rem;
+    padding: .2rem .3rem;
     position: fixed;
     top: .5rem;
     right: 0;
@@ -31,7 +31,7 @@ nav {
     padding: 1rem 0;
     position: fixed;
     height: auto;
-    top: 13.7rem;
+    top: 11.25rem;
     width: 100%;
     z-index: 9999999;
 
@@ -45,26 +45,35 @@ nav {
       align-items: center;
       box-shadow: none;
       display: flex;
-      height: 3rem;
-      margin: .2rem 0;
+      height: 2rem;
+      margin: 1rem 0;
       width: 100%;
 
       &:hover, .active {
+        border-left: 4px solid $red;
+        border-bottom: none;
         box-shadow: none;
+      }
+
+      @media(min-width: $mobile) {
+        height: 4rem;
       }
     }
 
     ul li a {
       align-items: center;
+      border: none;
       box-shadow: none;
       display: flex;
       font-size: 1.2rem;
       justify-content: center;
       margin: 0;
+      padding: .5rem 0;
       text-align: center;
       width: 100%;
 
       &:hover, .active {
+        border-bottom: none;
         box-shadow: none;
       }
     }
@@ -103,6 +112,10 @@ nav {
       width: 50%;
 
       @media(min-width: $mobile) {
+        width: 20%;
+      }
+
+      @media(min-width: $tablet) {
         width: 15%;
       }
     }
@@ -117,14 +130,10 @@ nav {
       display: block;
       font-weight: 600;
       height: 100%;
-      padding: .5rem;
+      padding: .5rem 0;
       text-align: center;
       width: 100%;
       transition: all .05s ease-in-out;
-
-      @media(min-width: $tablet) {
-        padding: 1rem 0;
-      }
     }
   }
 }

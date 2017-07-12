@@ -1,25 +1,24 @@
 .section {
   @include container;
-  background: #fff;
   display: block;
   padding: 2.5rem 0;
   position: relative;
-  margin: 0 auto;
   min-height: 40vh;
   opacity: 1;
   left: auto;
   text-align: center;
-  width: auto;
+  width: 95%;
 
   @media(min-width: $mobile) {
-    border-top: 2px solid $black;
+    margin-top: 0;
   }
 
   h2 {
     border-bottom: 4px solid $red;
     display: inline-block;
     font-weight: 700;
-    margin: 0 auto;
+    margin: 0 auto 1.5rem;
+    padding-bottom: .5rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 
