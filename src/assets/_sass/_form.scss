@@ -14,11 +14,15 @@
     width: 50%;
   }
 
+  h4 {
+    font-size: 28px;
+  }
+
   input, textarea {
     border: none;
     border-radius: 5px;
     color: $black;
-    font-size: 1.2rem;
+    font-size: 1.1em;
     margin: .5rem;
     outline: none;
     padding: 1rem;
@@ -38,15 +42,12 @@
   }
 
   button {
-    background: #000;
+    display: block;
+    color: white;
     border: none;
-    box-shadow: none;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-    height: 3rem;
-    margin: 1rem 0;
-    padding: 0rem;
-    width: 50%;
+    font-size: 1.1em;
+    padding: .5rem 1rem;
+    margin: 1rem auto .5rem;
+    width: 11rem;
   }
 }

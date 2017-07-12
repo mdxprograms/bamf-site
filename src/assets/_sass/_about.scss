@@ -1,53 +1,45 @@
 #about {
-  h4 {
-    align-items: center;
-    display: flex;
-    background-color: rgba(255, 255, 255, .8);
-    color: $red;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1.5rem 0 0;
-    width: 100%;
-
-    span {
-      color: $black;
-      margin-left: .5rem;
-    }
-  }
   .img-content-card {
-    background: url(/assets/images/about/jamescourtney.jpg) center/cover no-repeat;
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: 0;
     width: 100%;
-
-    @media(min-width: $mobile) {
-      justify-content: flex-end;
-      height: 40rem;
-    }
   }
   .img-content-card__content {
-    align-items: stretch;
     border-radius: $radius;
     background-color: transparent;
-    display: column;
+    font-size: 16px;
     padding: 0;
     width: 100%;
-
-    @media(min-width: $mobile) {
-      flex-direction: row;
-    }
   }
   .img-content-card__content p {
-    background-color: rgba(255,255,255,0.8);
-    color: $black;
-    line-height: 1.6;
-    padding: 1rem 1.5rem .8rem;
-    transition: all 500ms ease-in;
+    font-weight: 300;
+    line-height: 1.45em;
+    padding: .8rem;
+
+    @media(min-width: $mobile) {
+      padding: .8rem 2rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 0 1rem;
+    width: 100%;
 
     @media(min-width: $tablet) {
-      margin-bottom: 0;
-      height: 50%;
+      margin: 0 auto 2rem;
+      width: 100%;
     }
+  }
+
+  a {
+    display: block;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    margin: 2rem auto 0;
+    max-width: 11rem;
   }
 }

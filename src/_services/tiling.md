@@ -1,7 +1,9 @@
 ---
 title: Tiling
 service: tiling
+image: /assets/images/home/tiling.jpeg
 ---
 #### Tiling
 
-![Tiling](/assets/images/services/tiling/default.jpeg)
+Whether your looking for a new backsplash, a new sleek tile
+floor, or a custom tile shower - we can do it all!

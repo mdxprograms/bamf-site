@@ -1,7 +1,13 @@
 ---
 ---
+
 [
-  {% directory path: assets/images/home %}
-    {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-  {% enddirectory %}
+{% for item in site.services %}
+  {
+    "title": "{{item.title}}",
+    "service": "{{item.service}}",
+    "image": "{{item.image}}",
+    "content": {{item.content | jsonify}}
+  }{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
 ]

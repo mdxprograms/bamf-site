@@ -1,19 +1,24 @@
 <services>
-  <div class="services section" id="services">
-    <div class="services__offered">
-      <div if={images} class="services__offered-service" each={image in images}>
-        <div class="service-background" style="background: url({image}) center/cover no-repeat;"></div>
-      </div>
+  <div class="services section" id="services" animate="fade" animate-duration="300ms" animate-delay="300ms">
+    <h2>Services</h2>
+    <div class="services__offered-service lightbg has-radius" each="{service, i in services}">
+      <figure class={'is-right': i % 2 === 0, 'is-left': i % 2 !== 0}>
+        <img src="{service.image}" alt="{service.title}" />
+      </figure>
+      <raw html="{service.content}"></raw>
     </div>
   </div>
 
   <script>
-    // this.images = []
+    this.services = []
 
-    // setStyle(e, image) {
-    //   console.log(e, image)
-    // }
-    // axios.get('/api/home.json')
-    //   .then(e => this.update({ images: e.data }))
+    axios.get('/api/home.json')
+      .then(e => this.update({services: e.data}))
+
+    riot.tag('raw', '', function(opts) {
+      this.root.innerHTML = opts.html
+    })
+
+    this.mixin(riotAnimate)
   </script>
 </services>

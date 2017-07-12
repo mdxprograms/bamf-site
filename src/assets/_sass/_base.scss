@@ -3,8 +3,8 @@
 
 body {
   background-color: #fff;
-  font-family: sans-serif;
-  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   line-height: 1.45;
   margin: 0 auto;
   transition: all 1s cubic-bezier(0.44, 0.85, 0.1, 1.29);
@@ -16,6 +16,21 @@ body {
 
 .has-radius {
   border-radius: $radius;
+}
+
+// page transition effect
+.fade.riot-animate {
+	transition:0.5s linear all;
+}
+
+.fade.riot-enter,
+.fade.riot-leave.riot-leave-active  {
+	opacity:0;
+}
+
+.fade.riot-enter.riot-enter-active ,
+.fade.riot-leave {
+	opacity:1;
 }
 
 @import

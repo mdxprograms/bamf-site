@@ -1,15 +1,14 @@
 <gallery>
-  <section class="section gallery" id="gallery">
+  <section class="section gallery" id="gallery" animate="fade" animate-duration="300ms" animate-delay="300ms">
     <h2>Gallery</h2>
-    <button if={expandImageSet} onclick={prevImage} class="button button-white prev-button">&larr;</button>
+    <button if={expandImageSet} onclick={prevImage} class="button button-white prev-button">&#9664;</button>
     <div onclick={collapseImage} if={expandImageSet} class="expand-image">
       <button onclick={collapseImage} class="button button-white collapse-image">&times;</button>
       <div if={loading}>Loading...</div>
       <img if={!loading} class="expanded-image" alt="" src="{expandedImage}" />
     </div>
-    <button if={expandImageSet} onclick={nextImage} class="next-button button button-white">&rarr;</button>
+    <button if={expandImageSet} onclick={nextImage} class="next-button button button-white">&#9654;</button>
     <div if={showService} class="gallery-grid lightbg has-radius">
-      <p>* Click on an image to expand</p>
       <div onclick={() => expandImage(i, v)} each="{v, i in images}" class="gallery-grid__item">
         <img src="{v}" alt="gallery-image" />
       </div>
@@ -65,5 +64,7 @@
         })
       })
       .catch(err => console.error(err))
+
+    this.mixin(riotAnimate)
   </script>
 </gallery>

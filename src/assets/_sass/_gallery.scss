@@ -1,25 +1,24 @@
 .gallery {
+  max-width: 100%;
+
   .prev-button, .next-button {
     position: fixed;
     top: 50%;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
-    background: white;
+    background: transparent;
     border: none;
-    font-size: 30px;
-    color: #333;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: red;
     cursor: pointer;
-    opacity: .5;
     outline: none;
-    transform: translateY(-50%);
     z-index: 999999999;
   }
   .prev-button {
-    left: 1rem;
+    left: 0;
   }
   .next-button {
-    right: 1rem;
+    right: 0;
   }
   .expand-image {
     background: rgba(0, 0, 0, .8);
@@ -36,35 +35,21 @@
       max-width: 90%;
 
       @media(min-width: $mobile) {
-        height: 80vh;
-        margin-top: 13%;
-        max-width: 80%;
-      }
-
-      @media(min-width: $tablet) {
-        margin-top: 20%;
-      }
-
-      @media(min-width: $desktop) {
-        margin-top: 16%;
-      }
-
-      @media(min-width: $desktop-large) {
-        margin-top: 13%;
+        max-height: 82vh;
+        margin-top: 15vh;
+        max-width: 90%;
       }
     }
     .collapse-image {
       cursor: pointer;
       position: fixed;
       background: transparent;
-      height: 3rem;
       color: #fff;
       box-shadow: none;
-      font-size: 4em;
+      font-size: 2.8em;
       border: none;
-      top: 2rem;
-      width: 3rem;
-      right: 2rem;
+      top: 0;
+      right: 0;
     }
   }
   .gallery-grid {
@@ -73,11 +58,8 @@
     justify-content: space-around;
     padding: 1rem 0;
 
-    p {
-      align-self: center;
-      color: $black;
-      padding-bottom: 1rem;
-      width: 100%;
+    @media(min-width: $tablet) {
+      padding: 1.5rem 1rem 0;
     }
 
     &__item {
