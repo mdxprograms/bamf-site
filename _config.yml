@@ -1,16 +1,15 @@
 # general settings
-title: BAMF
+title: BAMF General Contracting
 subtitle: General Contracting
 email: bamfgeneralcontracting@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   General contracting business to handle all of your project needs
 baseurl: ""
-logo: /assets/images/global/logo.svg
+logo: /assets/images/global/bamf-share.png
 image:
-  path: /assets/images/global/logo.svg
+  path: /assets/images/global/bamf-share.png
   height: 600
   width: 600
-themecolor: #ff0000
 url: https://bamfgc.com
 social:
   name: BAMF General Contracting
