@@ -34,6 +34,13 @@ sass:
 collections:
   - services
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/global/bamf-share.png
+
+# used for thumnail generation
 width: 500
 
 # Build settings
