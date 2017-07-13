@@ -55,7 +55,7 @@
   .gallery-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1rem 0;
 
     @media(min-width: $tablet) {

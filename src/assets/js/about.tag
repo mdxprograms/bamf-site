@@ -4,26 +4,25 @@
     <div class="img-content-card">
       <div class="img-content-card__content">
         <img src="/assets/images/about/jamescourtney.jpg" alt="">
-        <p class="lightbg has-radius" if={typeof aboutContent !== 'undefined'}>
-          {aboutContent.why}
-        </p>
+        <div class="img-content-card__text lightbg has-radius">
+          <p>
+            Choose BAMF, because James and Courtney will
+            care about your house as if it is their own. Their honesty, hard work, care, and integrity set them apart from other, more
+            expensive, firms. Because quality is their highest priority, you will be blown away by what you
+            get. And, because they are so affordable, you’ll be amazed at the bottom line.
+          </p>
+          <p>
+            Your business is important to James and Courtney. But, earning your repeat business and your referrals is the
+            biggest compliment they can receive. They are confident that they will get your job done right
+            and walk you through the process every step of the way.
+          </p>
+        </div>
       </div>
     </div>
     <a href="#contact" class="button button-red">Contact Us Today!</a>
   </section>
 
   <script>
-    this.aboutContent = []
-
-    axios.get('/api/about.json')
-      .then(res => {
-        this.aboutContent = res.data[1]
-      }).then(() => this.update())
-
-    riot.tag('raw', '', function(opts) {
-      this.root.innerHTML = opts.html
-    })
-
     this.mixin(riotAnimate)
   </script>
 </about>

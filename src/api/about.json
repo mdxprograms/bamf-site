@@ -1,3 +1,0 @@
----
----
-{% include endpoint.html data=site.data.about %}
