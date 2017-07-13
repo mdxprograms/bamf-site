@@ -8,8 +8,8 @@ baseurl: ""
 logo: /assets/images/global/logo.svg
 image:
   path: /assets/images/global/logo.svg
-  height: 100
-  width: 100
+  height: 600
+  width: 600
 themecolor: #ff0000
 url: https://bamfgc.com
 social:
