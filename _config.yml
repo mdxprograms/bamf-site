@@ -3,13 +3,24 @@ title: BAMF
 subtitle: General Contracting
 email: bamfgeneralcontracting@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  BAMF General Contracting
+  General contracting business to handle all of your project needs
 baseurl: ""
-url: "https://bamfgc.com"
+logo: /assets/images/global/logo.svg
+image:
+  path: /assets/images/global/logo.svg
+  height: 100
+  width: 100
+themecolor: #ff0000
+url: https://bamfgc.com
+social:
+  name: BAMF General Contracting
+  links:
+    - https://bamfgc.com
+    - https://facebook.com/BAMFGeneralContracting
 twitter:
   username: ""
 facebook:
-  username: "BAMFGeneralContracting"
+  username: BAMFGeneralContracting
 contact_info:
   address: 1278 Normandie Court, Avon IN 46123
   phone: 317.281.2559
