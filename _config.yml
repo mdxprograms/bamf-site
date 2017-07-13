@@ -6,7 +6,10 @@ description: > # this means to ignore newlines until "baseurl:"
   General contracting business to handle all of your project needs
 baseurl: ""
 logo: /assets/images/global/bamf-share.png
-image: /assets/images/global/bamf-share.png
+image:
+  path: /assets/images/global/bamf-share.png
+  height: 200
+  width: 200
 url: https://bamfgc.com
 social:
   name: BAMF General Contracting
