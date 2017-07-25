@@ -1,8 +1,9 @@
 ---
 title: Flooring
 service: flooring
-image: /assets/images/home/flooring.jpg
+image: "/assets/images/home/flooring.jpg"
 ---
+
 #### Flooring
 
 Do you have old dirty carpet that you can never get clean enough? Wood floors
