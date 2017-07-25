@@ -21,7 +21,7 @@ email: bamfgeneralcontracting@gmail.com
 description: 'General contracting business to handle all of your project needs
 
 '
-baseurl: ''
+baseurl: 
 logo: "/assets/images/global/logo.svg"
 url: https://bamfgc.com
 social:
@@ -30,7 +30,7 @@ social:
   - https://bamfgc.com
   - https://facebook.com/BAMFGeneralContracting
 twitter:
-  username: ''
+  username: 
 facebook:
   username: BAMFGeneralContracting
 contact_info:
