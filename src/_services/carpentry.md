@@ -1,8 +1,9 @@
 ---
 title: Carpentry
 service: carpentry
-image: /assets/images/home/carpentry.jpg
+image: "/assets/images/home/carpentry.jpg"
 ---
+
 #### Carpentry
 
 One thing that can make a house pop is trim! <br />
