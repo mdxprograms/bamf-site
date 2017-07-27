@@ -1,7 +1,7 @@
 <contact>
   <div class="contact section" id="contact" animate="fade" animate-duration="300ms" animate-delay="300ms">
     <h2>Contact</h2>
-    <form class="form" action="https://formspree.io/contact@bamfgc.com" method="POST">
+    <form class="form lightbg" action="https://formspree.io/contact@bamfgc.com" method="POST">
       <h4>Contact Us Today!</h4>
       <p>
         We are license bonded and insured with <u><em>free estimates</em></u>

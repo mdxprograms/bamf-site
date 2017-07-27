@@ -13,7 +13,7 @@ body {
 .banner {
   align-items: center;
   background: #444;
-  color: white;
+  color: #fff;
   display: none;
   flex-wrap: wrap;
   flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
   @media(min-width: 540px) {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1rem 0;
   }
 
@@ -37,13 +37,13 @@ body {
     text-align: center;
     width: 90%;
 
-    @media(min-width: 540px) {
-      margin: auto;
-      width: 60%;
+    @media(min-width: 480px) {
+      margin-bottom: .5rem;
     }
 
-    @media(min-width: 720px) {
-      width: 65%;
+    @media(min-width: 540px) {
+      margin-bottom: 0;
+      width: 60%;
     }
   }
 
@@ -57,7 +57,7 @@ body {
 
     @media(min-width: 540px) {
       font-size: inherit;
-      margin: 0 auto;
+      margin: 0 2rem;
     }
 
     &:hover {
