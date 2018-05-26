@@ -1,0 +1,47 @@
+<nav>
+  <ul class="items">
+    <li>
+      <a href="/" class="{% if page.path == "index.html" %}active{% endif %} button button-white">Services</a>
+    </li>
+    <li>
+      <a class="{% if page.path == "gallery.html" %}active{% endif %} button button-white" href="/gallery">Gallery</a>
+    </li>
+    <li>
+      <a class="{% if page.path == "reviews.html" %}active{% endif %} button button-white" href="/reviews">Reviews</a>
+    </li>
+    <li>
+      <a class="{% if page.path == "about.html" %}active{% endif %} button button-white" href="/about">About</a>
+    </li>
+    <li>
+      <a class="{% if page.path == "contact.html" %}active{% endif %} button button-white" href="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="mobile-toggle">
+  <hr>
+  <hr>
+  <hr>
+</nav>
+
+<!-- <nav class="" onclick=this.classList.toggle("open")>
+  <ul>
+    <ul class="items">
+      <li>
+        <a href="/services" class="active button button-white">Services</a>
+      </li>
+      <li>
+        <a href="/gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="/reviews">Reviews</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </ul>
+</nav> -->

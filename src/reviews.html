@@ -1,0 +1,16 @@
+---
+layout: default
+title: Reviews
+---
+
+<section class="section reviews">
+  <h2>Reviews</h2>
+  <div class="reviews__collection">
+    {% for item in site.reviews %}
+      <div class="reviews__collection-item lightbg">
+        {{item.content}}
+        <span class="reviews__collection-person">- {{ item.name }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>

@@ -21,32 +21,14 @@
   </head>
   <body>
     <div class="container">
-      <app>
-        <logo></logo>
-        <nav-bar></nav-bar>
+      {% include logo.html %}
+      {% include nav.html %}
+      
+      {% if page.url == "" %}
         <div class="banner"><span>{{site.description}}</span> <a class="button button-red" href="/#contact">Contact Us Today!</a></div>
-        <router>
-          <route path="">
-            <services></services>
-          </route>
-          <route path="services">
-            <services></services>
-          </route>
-          <route path="gallery">
-            <gallery></gallery>
-          </route>
-          <route path="reviews">
-            <reviews></reviews>
-          </route>
-          <route path="about">
-            <about></about>
-          </route>
-          <route path="contact">
-            <contact></contact>
-          </route>
-        </router>
-        <footer-bar></footer-bar>
-      </app>
+      {% endif %}
+
+      {{ content }}
     </div>
 
     {% include scripts.html %}
