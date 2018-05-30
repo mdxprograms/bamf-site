@@ -9,3 +9,4 @@ fields:
   label: layout
   name: layout
   hidden: true
+  default: default
