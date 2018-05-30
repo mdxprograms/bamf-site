@@ -10,3 +10,5 @@ fields:
   name: layout
   hidden: true
   default: default
+pages:
+- gallery.html
