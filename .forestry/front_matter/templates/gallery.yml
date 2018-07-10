@@ -1,0 +1,14 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: image_gallery
+  name: gallery_images
+  label: Gallery Images
+- type: text
+  label: layout
+  name: layout
+  hidden: true
+  default: default
+pages:
+- gallery.html
