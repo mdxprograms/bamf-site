@@ -1,8 +1,0 @@
----
----
-
-[
-  {% directory path: assets/images/services exclude: ^((?!_thumb).)*$ %}
-    {{file.url | jsonify}}{% unless forloop.last %},{% endunless %}
-  {% enddirectory %}
-]

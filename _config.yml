@@ -42,7 +42,7 @@ defaults:
     values:
       image:  "/assets/images/global/bamf-share.png"
 
-gems:
+plugins:
   - jekyll-autoprefixer
   - jekyll-maps
   - jekyll-minifier

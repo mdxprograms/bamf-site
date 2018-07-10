@@ -1,4 +1,0 @@
----
----
-
-{% include endpoint.html data=site.data.reviews %}

@@ -76,7 +76,7 @@ module Jekyll
             'last' => (index == length - 1)
           }
 
-          result << render_all(@nodelist, context)
+          result << render(@nodelist, context)
         end
       end
       result
