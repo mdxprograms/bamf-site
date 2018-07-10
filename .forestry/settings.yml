@@ -1,12 +1,9 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 collections:
-- path: _services
-  label: Services
-  create: all
 - path: _posts
   label: Posts
   create: all
