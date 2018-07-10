@@ -1,22 +1,18 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-<script src="/assets/js/app.tag" type="riot/tag"></script>
-<script src="/assets/js/nav-bar.tag" type="riot/tag"></script>
-<script src="/assets/js/logo.tag" type="riot/tag"></script>
-<script src="/assets/js/reviews.tag" type="riot/tag"></script>
-<script src="/assets/js/about.tag" type="riot/tag"></script>
-<script src="/assets/js/services.tag" type="riot/tag"></script>
-<script src="/assets/js/gallery.tag" type="riot/tag"></script>
-<script src="/assets/js/contact.tag" type="riot/tag"></script>
-<script src="/assets/js/footer-bar.tag" type="riot/tag"></script>
-<script src="/assets/js/vendor/riotAnimate.min.js"></script>
-<script src="/assets/js/banner.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.6.0/riot+compiler.min.js"></script>
-<script src="https://cdn.jsdelivr.net/riot-route/3.1.1/route+tag.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 
 <script>
-  riot.compile(function() {
-    riot.mount('app')
-    route.start(true)
-  })
+if (document.querySelector(".galleria")) {
+  (function() {
+    document.addEventListener("DOMContentLoaded", function() {
+      Galleria.loadTheme(
+        "https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"
+      );
+      Galleria.run(".galleria", {
+        autoplay: 5000,
+        maxScaleRatio: 1
+      });
+    });
+  })();
+}
 </script>

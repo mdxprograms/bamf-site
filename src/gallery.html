@@ -8,4 +8,11 @@ gallery_images:
 - "/assets/images/services/1382_thumb.jpg"
 - "/assets/images/services/3067_thumb.jpg"
 ---
-Click an image below to have a closer look!
+
+<div class="galleria services section">
+  {% for image in page.gallery_images %}
+  <a href="{{ image }}">
+    <img alt="" src="{{ image }}" />
+  </a>
+  {% endfor %}
+</div>
