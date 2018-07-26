@@ -1,20 +1,18 @@
 ---
 label: Gallery
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: default
 - name: title
   label: Title
   type: text
-  hidden: false
+  hidden: true
   default: ''
-- name: gallery_images
-  label: Gallery images
-  type: list
-  hidden: false
-  default: ''
+- type: image_gallery
+  name: gallery_images
+  label: Gallery Images
