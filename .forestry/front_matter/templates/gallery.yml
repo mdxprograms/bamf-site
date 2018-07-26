@@ -16,3 +16,5 @@ fields:
 - type: image_gallery
   name: gallery_images
   label: Gallery Images
+pages:
+- src/gallery.html
