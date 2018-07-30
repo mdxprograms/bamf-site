@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta name="keywords" content="{{site.keywords}}" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,34 +21,19 @@
   </head>
   <body>
     <div class="container">
-      <app>
-        <logo></logo>
-        <nav-bar></nav-bar>
+      {% include logo.html %}
+      {% include nav.html %}
+
+      {% if page.url == "/" %}
         <div class="banner"><span>{{site.description}}</span> <a class="button button-red" href="/#contact">Contact Us Today!</a></div>
-        <router>
-          <route path="">
-            <services></services>
-          </route>
-          <route path="services">
-            <services></services>
-          </route>
-          <route path="gallery">
-            <gallery></gallery>
-          </route>
-          <route path="reviews">
-            <reviews></reviews>
-          </route>
-          <route path="about">
-            <about></about>
-          </route>
-          <route path="contact">
-            <contact></contact>
-          </route>
-        </router>
-        <footer-bar></footer-bar>
-      </app>
+      {% endif %}
+
+      {{ content }}
+      {% include footer.html %}
     </div>
 
-    {% include scripts.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    <script src="/assets/js/bundle.js" charset="utf-8"></script>
   </body>
 </html>

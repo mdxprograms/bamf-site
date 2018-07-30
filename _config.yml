@@ -1,46 +1,48 @@
-title: BAMF General Contracting
-timezone: America/Indiana/Indianapolis
-subtitle: General Contracting
-email: bamfgeneralcontracting@gmail.com
-description: >
+title:        BAMF General Contracting
+timezone:     America/Indiana/Indianapolis
+subtitle:     General Contracting
+email:        bamfgeneralcontracting@gmail.com
+description:  >
   The general contracting business to handle all of your project needs.
-keywords: BAMFGC,BAMF General Contracting,bamf general contracting,bamfgc,General Contractor,Remodeling,Carpentry,Tiling,Painting,Drywall Repair,Drywall Installation,Flooring,Demolition,Windows and Doors,Bathroom Remodel,Kitchen Remodel,Backsplash Installation,Carpet Installation,Fence Installation,Deck Repair,Home Remodeling,General Contractor in Avon
-baseurl: ""
-logo: /assets/images/global/logo.svg
-url: https://bamfgc.com
+keywords:     "general contractor,remodel, BAMFGC,BAMF General Contracting,bamf general contracting,bamfgc,General Contractor,Remodeling,Carpentry,Tiling,Painting,Drywall Repair,Drywall Installation,Flooring,Demolition,Windows and Doors,Bathroom Remodel,Kitchen Remodel,Backsplash Installation,Carpet Installation,Fence Installation,Deck Repair,Home Remodeling,General Contractor in Avon"
+baseurl:      ""
+logo:         /assets/images/global/logo.svg
+url:          https://bamfgc.com
 social:
-  name: BAMF General Contracting
+  name:       BAMF General Contracting
   links:
     - https://bamfgc.com
     - https://facebook.com/BAMFGeneralContracting
 twitter:
-  username: 
+  username:
 facebook:
-  username: BAMFGeneralContracting
+  username:   BAMFGeneralContracting
 contact_info:
-  address: 1278 Normandie Court, Avon IN 46123
-  phone: 317.281.2559
-source: src
-destination: build
+  address:    1278 Normandie Court, Avon IN 46123
+  phone:      317.281.2559
+source:       src
+destination:  build
 sass:
-  sass_dir: assets/_sass
-  style: compressed
-width: 500
-markdown: kramdown
+  sass_dir:   assets/_sass
+  style:      compressed
+width:        500
+markdown:     kramdown
 
 collections:
   services:
-    title: Services
-    output: false
+    title:    Services
+    output:   false
+  reviews:
+    output:   false
 
 defaults:
-  - 
+  -
     scope:
-      path: ''
+      path:   ''
     values:
-      image: "/assets/images/global/bamf-share.png"
+      image:  "/assets/images/global/bamf-share.png"
 
-gems:
+plugins:
   - jekyll-autoprefixer
   - jekyll-maps
   - jekyll-minifier

@@ -1,0 +1,20 @@
+---
+label: Gallery
+hide_body: true
+is_partial: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: default
+- name: title
+  label: Title
+  type: text
+  hidden: true
+  default: ''
+- type: image_gallery
+  name: gallery_images
+  label: Gallery Images
+pages:
+- src/gallery.html
