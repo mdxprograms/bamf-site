@@ -704,16 +704,20 @@ nav .items a {
   }
 }
 
+#about {
+  margin-top: 2rem;
+}
+
 #about img {
   display: block;
-  margin: 0 0 1rem;
-  width: 100%;
+  margin: 0 auto 1rem;
+  width: 90%;
 }
 
 @media (min-width: 768px) {
   #about img {
     margin: 0 auto 2rem;
-    width: 100%;
+    max-width: 60%;
   }
 }
 
