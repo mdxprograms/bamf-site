@@ -9,7 +9,7 @@ layout: default
     <div class="services__offered-service lightbg has-radius">
       {% assign is_left = forloop.index | modulo: 2 %}
       <figure class="{% if is_left == 0 %}is-right{% endif %}{% if is_left != 0 %}is-left{% endif %}">
-        <img src="{{service.image}}" alt="{{service.title}}" />
+        <img class="lazyload" src="{{service.image}}" alt="{{service.title}}" />
       </figure>
       <div class="services__offered-content">
         {{ service.content }}

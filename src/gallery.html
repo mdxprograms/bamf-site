@@ -98,7 +98,7 @@ gallery_images:
 <div class="galleria services section">
   {% for image in page.gallery_images %}
   <a href="{{ image }}">
-    <img alt="" src="{{ image }}" />
+    <img class="lazyload" alt="" src="{{ image }}" />
   </a>
   {% endfor %}
 </div>
